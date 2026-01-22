@@ -1,0 +1,674 @@
+/* ===== Base Styles ===== */
+.App {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== Card Styles ===== */
+.card-custom {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 1rem 1.5rem !important;
+}
+
+.card-header h3 {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    margin: 0 !important;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* ===== Button Styles ===== */
+.btn-custom {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    white-space: nowrap;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sm.btn-custom {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}
+
+/* ===== Form Styles ===== */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* ===== Table Styles ===== */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -1.5rem;
+    padding: 0 1.5rem;
+}
+
+.table {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.table th {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 8px;
+    background-color: #f8f9fa;
+}
+
+.table td {
+    padding: 12px 8px;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f3f5;
+    cursor: pointer;
+}
+
+/* ===== Action Buttons ===== */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* ===== Search Filter Section ===== */
+.search-filter-section {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Pagination ===== */
+.pagination-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #dee2e6;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.pagination-custom span {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+/* ===== Home Page ===== */
+.home-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    margin: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.home-hero p {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.home-hero .d-flex {
+    gap: 1rem;
+    justify-content: center;
+}
+
+.home-hero .btn {
+    min-width: 180px;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+}
+
+/* ===== Features Section ===== */
+.features-section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #2d3748;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h4 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #2d3748;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* ===== Navbar Responsive ===== */
+.navbar-brand {
+    font-size: clamp(1.1rem, 3vw, 1.5rem) !important;
+    font-weight: 600 !important;
+}
+
+.nav-link {
+    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* ===== Error Message ===== */
+.error-message {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* ===== Loading State ===== */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* ===== Utility Classes ===== */
+.text-break {
+    word-break: break-word;
+}
+
+/* ===================================================================
+   RESPONSIVE BREAKPOINTS
+   ================================================================ */
+
+/* ===== Mobile Phones (up to 576px) ===== */
+@media (max-width: 575.98px) {
+    /* Containers & Spacing */
+    .container-custom,
+    .card-body,
+    .search-filter-section {
+        padding: 1rem;
+    }
+
+    /* Hero Section */
+    .home-hero {
+        padding: 2.5rem 1rem;
+        margin: 1rem;
+        border-radius: 10px;
+    }
+
+    .home-hero h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .home-hero .d-flex {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .home-hero .btn {
+        width: 100%;
+        min-width: unset;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Features */
+    .features-section {
+        padding: 2rem 1rem;
+    }
+
+    .features-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+
+    /* Tables */
+    .table-responsive {
+        margin: 0 -1rem;
+        padding: 0 1rem;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px 4px;
+    }
+
+    .table thead th {
+        font-size: 0.85rem;
+    }
+
+    /* Action Buttons */
+    .action-buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    /* Search Filters */
+    .search-filter-section .col-md-4,
+    .search-filter-section .col-lg-4 {
+        margin-bottom: 1rem;
+    }
+
+    .search-filter-section .d-flex.gap-2 {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-filter-section .btn {
+        width: 100%;
+    }
+
+    /* Pagination */
+    .pagination-custom {
+        gap: 10px;
+        padding: 1rem 0.5rem;
+    }
+
+    .pagination-custom .btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .pagination-custom span {
+        font-size: 0.85rem;
+    }
+
+    /* Form Elements */
+    .form-control,
+    .form-select {
+        font-size: 0.95rem;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    /* Card Headers */
+    .card-header {
+        padding: 0.75rem 1rem !important;
+    }
+
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* ===== Small Tablets (576px - 767px) ===== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home-hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .action-buttons .btn {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== Medium Tablets (768px - 991px) ===== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home-hero {
+        padding: 3.5rem 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== Large Tablets / Small Desktops (992px - 1199px) ===== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-custom {
+        max-width: 960px;
+    }
+}
+
+/* ===== Desktops (1200px and up) ===== */
+@media (min-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container-custom {
+        max-width: 1140px;
+    }
+}
+
+/* ===== Large Desktops (1400px and up) ===== */
+@media (min-width: 1400px) {
+    .container-custom {
+        max-width: 1320px;
+    }
+
+    .home-hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ===== Extra Wide Screens (1920px and up) ===== */
+@media (min-width: 1920px) {
+    .container-custom {
+        max-width: 1600px;
+    }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .navbar,
+    .btn,
+    .pagination-custom,
+    .search-filter-section {
+        display: none !important;
+    }
+
+    .card-custom {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    body {
+        background: white;
+    }
+}
+
+/* ===== Smooth Transitions ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Selection Styling ===== */
+::selection {
+    background-color: #667eea;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #667eea;
+    color: white;
+}
+
+/* ===== Focus Accessibility ===== */
+.btn:focus,
+.form-control:focus,
+.form-select:focus,
+a:focus {
+    outline: 3px solid rgba(13, 110, 253, 0.5);
+    outline-offset: 2px;
+}
+
+/* ===== Scrollbar Styling (Webkit browsers) ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* ===== Footer ===== */
+.app-footer {
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+.app-footer .small {
+    opacity: 0.85;
+}
+
+/* Footer unique design */
+.app-footer {
+    background: linear-gradient(90deg, #2b2d42 0%, #3f3f7a 100%);
+    color: #f8f9fa;
+}
+.footer-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffd166 0%, #ef476f 100%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #1f1f2e;
+    box-shadow: 0 6px 18px rgba(15,15,30,0.35);
+}
+.footer-link {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+.social-link {
+    color: #f8f9fa;
+    opacity: 0.95;
+}
+.social-link:hover {
+    color: #ffd166;
+    transform: translateY(-3px);
+}
+
+/* Improve contrast for footer text on gradient background */
+.app-footer,
+.app-footer .fw-bold,
+.app-footer .footer-link,
+.app-footer .social-link {
+    color: #ffffff !important;
+}
+.app-footer .text-muted {
+    color: rgba(255,255,255,0.8) !important;
+}
+.app-footer .small {
+    color: rgba(255,255,255,0.85) !important;
+}
+.app-footer .footer-link {
+    color: #ffd166 !important; /* highlight links */
+}
+.app-footer a.footer-link:hover {
+    color: #fff !important;
+}
+
+
+/* ===== Feature Icon Styling ===== */
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.feature-card {
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* Make feature cards fully clickable links */
+.feature-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.feature-card-link .feature-card {
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-card h4 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #718096;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mobile adjustments for feature cards */
+@media (max-width: 575.98px) {
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+}
