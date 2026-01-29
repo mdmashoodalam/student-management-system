@@ -17,9 +17,12 @@ const StudentsList = () => {
     
     const departments = ['Computer Science', 'Electronics', 'Mechanical', 'Civil', 'Electrical', 'IT'];
     
+    // useEffect(() => {
+    //     loadStudents();
+    // }, [currentPage, pageSize, sortBy, sortDirection]);
     useEffect(() => {
-        loadStudents();
-    }, [currentPage, pageSize, sortBy, sortDirection]);
+  loadStudents();
+}, [loadStudents]);
     
     const loadStudents = () => {
         setLoading(true);
@@ -256,4 +259,7 @@ const StudentsList = () => {
     );
 };
 
-export default StudentsList;
+
+const studentServiceInstance = new StudentService();
+export default studentServiceInstance;
+
