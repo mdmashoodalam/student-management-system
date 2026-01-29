@@ -109,7 +109,7 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
             <version>${spring.boot.version}</version>
             <configuration>
-                <mainClass>com.studentmanagement.StudentManagementApplication</mainClass>
+                <mainClass>com.studentmanagement.StudentManagementSystemApplication</mainClass>
             </configuration>
             <executions>
                 <execution>
