@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Table, Button, Card, Spinner, Form, Row, Col } from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -17,14 +17,7 @@ const StudentsList = () => {
     
     const departments = ['Computer Science', 'Electronics', 'Mechanical', 'Civil', 'Electrical', 'IT'];
     
-    // useEffect(() => {
-    //     loadStudents();
-    // }, [currentPage, pageSize, sortBy, sortDirection]);
-    useEffect(() => {
-  loadStudents();
-}, [loadStudents]);
-    
-    const loadStudents = () => {
+    const loadStudents = useCallback(() => {
         setLoading(true);
         StudentService.getAllStudents(currentPage, pageSize, sortBy, sortDirection, searchName, filterDepartment)
             .then(response => {
@@ -37,7 +30,11 @@ const StudentsList = () => {
                 toast.error('Failed to load students');
                 setLoading(false);
             });
-    };
+    }, [currentPage, pageSize, sortBy, sortDirection, searchName, filterDepartment]);
+    
+    useEffect(() => {
+        loadStudents();
+    }, [loadStudents]);
     
     const handleSearch = () => {
         setCurrentPage(0);
@@ -259,7 +256,4 @@ const StudentsList = () => {
     );
 };
 
-
-const studentServiceInstance = new StudentService();
-export default studentServiceInstance;
-
+export default StudentsList;
