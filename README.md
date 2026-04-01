@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://github.com/mdmashoodalam/secure-file-sharing)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://student-management-system-five-gray.vercel.app/)
 
 
 
