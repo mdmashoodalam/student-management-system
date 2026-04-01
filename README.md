@@ -1,5 +1,10 @@
 # Student Management System - Full Stack Web Application
 
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://github.com/mdmashoodalam/secure-file-sharing)
+
+
 
 [![GitHub stars](https://img.shields.io/github/stars/mdmashoodalam/student-management-system?style=social)](https://github.com/mdmashoodalam/student-management-system/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/mdmashoodalam/student-management-system?style=social)](https://github.com/mdmashoodalam/student-management-system/network/members)
